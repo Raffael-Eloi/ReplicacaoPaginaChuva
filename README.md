@@ -1,6 +1,7 @@
 # Replicação de uma página web
+O desafio consiste em recriar uma página desenvolvida tentando chegar o mais perto possível do resultado.
 
-Esté o link da página original desenvolvida através do Figma: 
+Esté o link da página original desenvolvida através do Figma que foi usado como base: 
   <a href="https://www.figma.com/proto/0D27YdXU8ibf0AhsBC2OEm/Chuva---Exerc%C3%ADcio-Frontend?node-id=1%3A123&scaling=min-zoom"> Clique aqui </a> <br><br>
   
 ## Para o desenvolvimento foram usadas as seguintes linguagens:
