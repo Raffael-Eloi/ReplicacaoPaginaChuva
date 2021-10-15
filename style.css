@@ -1,0 +1,265 @@
+/* Formatações gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {   
+    cursor: hand;
+    cursor: pointer;
+}
+
+/* Formatações do grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 4fr;
+
+    grid-template-areas: "slaca-grid head-grid head-grid" /* Cabeçalho */
+                        " slaca-grid main-grid aside-grid" /* Conteúdo principal */
+                        " slaca-grid main-grid aside-grid" /* Conteúdo principal */
+                        " slaca-grid footer-grid footer-grid"; /* Rodapé */
+}
+
+/* Formatações cabeçalho */
+header {
+    background-color: #FFE4E1;
+    grid-area: head-grid;
+    padding: 5px 25px;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns:50vw 10vw 35vw;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: "descricao-grid idioma-grid perfil-grid" 
+}
+
+header h6 {
+    font-size: 16px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+.foto-perfil-cabecalho {
+    border-radius: 50%;
+    width: 7%;
+    margin-top: 8px;
+}
+
+.cabecalho-descricao-parte1 {
+    grid-area: descricao-grid;
+}
+
+.cabecalho-idioma-parte2 {
+    grid-area: idioma-grid;
+    margin: 10% 5px;
+}
+
+.cabecalho-idioma-parte2 button {
+    background-color: #FFE4E1;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.cabecalho-login-parte3 {
+    grid-area: perfil-grid;
+}
+
+.cabecalho-login-parte3 p {
+    float: left;
+    font-size: 14px;
+    margin-top: 17px;
+    text-align: end;
+    padding-right: 8px;
+}
+
+/* Formatações cabeçalho */
+nav {
+    grid-area: slaca-grid;
+}
+
+.titulo-slaca {
+    background-color: #FF8C00;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.conteudo-principal-slaca li {
+    font-size: 18px;
+    color: gray;
+    padding: 10px 0 0 0;
+    text-indent: 16px;
+}
+
+.conteudo-principal-slaca li:hover {
+    border-left: 5px solid #FF8C00;
+    background-color: #FFE4E1;
+    cursor: hand;
+    cursor: pointer;
+}
+
+/* Formatações cabeçalho */
+main {
+    grid-area: main-grid;
+    padding: 10px;
+}
+
+main h2 {
+    font-size: 20px;
+    color: #FF8C00;
+    font-weight: bold;
+}
+
+main iframe {
+    border-radius: 5px;
+    margin: 0 10%;
+}
+.caixa-resumo {
+    border: 1px solid #FFE4E1;
+    border-radius: 5px;
+    margin-top: 4%;
+}
+.caixa-resumo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #FFE4E1;
+}
+
+.caixa-resumo p {
+    padding: 10px;
+}
+
+.caixa-resumo a {
+    text-decoration: none;
+    color: #FF8C00;
+    font-weight: bold;
+}
+
+#span-escondido-resumo {
+    visibility: hidden;
+}
+
+.caixa-discussoes {
+    border: 1px solid #FFE4E1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.caixa-discussoes h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #FFE4E1;
+}
+
+.caixa-discussoes .titulo-caixa-discussoes {
+    font-weight: bold;
+    color: #FF8C00;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.botao-personalizado {
+    background-color: #FF8C00;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-left: 45%;
+    justify-content: center;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+}
+
+.icones-discussoes {
+    display: inline;
+    width: 35%;
+    margin-left: 35%;
+    padding: 10px;
+}
+
+.icones-discussoes img {
+    padding: 5px 20px;
+}
+
+/* Formatações aside */
+aside {
+    grid-area: aside-grid;
+}
+
+.botoes-asid button {
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.botoes-asid .botoes-alinhamento {
+    margin-left: 25%;
+}
+
+aside .titulo-caixa-detalhes {
+    text-transform: uppercase;
+    color: #FF8C00;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.caixa-detalhes {
+    border: 1px solid #FFE4E1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.caixa-detalhes h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #FFE4E1;
+}
+
+.caixa-detalhes p {
+    color: gray;
+}
+
+/* Formatações cabeçalho */
+footer {
+    grid-area: footer-grid;
+}
+
+.rodape-imagem-botao {
+    float: left;
+}
+
+.rodape-imagem-botao button {
+    background-color: rebeccapurple;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 70px;
+    border: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer p {
+    padding-top: 20px;
+}
+
