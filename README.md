@@ -14,3 +14,6 @@ Esté o link da página original desenvolvida através do Figma que foi usado co
 
 ## Para visitar o site é só dar clicar aqui embaixo:
   + https://raffael-eloi.github.io/ReplicacaoPaginaChuva/
+
+## Resultado
+![página chuva](https://user-images.githubusercontent.com/51720161/137555588-2a9ad27d-ffbd-4476-a5d3-cae1a9c0619e.gif)
